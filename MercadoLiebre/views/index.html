@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <!--Se descarga los estilos de la página https://cdnjs.com/ recurso de íconos es font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--También se recomienda la siguiente topografía de https://fonts.google.com/specimen/Roboto
+    se recomienda la alternativa porque tiene el link de preconexión porque indica a que servidor conectarse
+    antes de ir al recurso
+
+Tener en cuenta cositas que no explicaron en el curso
+nodemon
+vim .gitignore
+npm init -y
+npm i express
+//para instalar dependencias y actualización de cambios automático
+npm i -D nodemon
+
+para que es 
+rm -rf .git
+npm run dev
+
+
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>   
+    <!--<i class="fa-solid fa-bars"></i>-->
+
+    <header>
+        <picture>
+            <img src="/images/logo-mercado-liebre.svg" title="Mercado Liebre">
+        </picture>
+        <form action="/" method="get" id="search-form">                
+            <input type="text" name="search" id="query" placeholder="Buscar productos, marcas">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </form>
+        <section>
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </section>
+        <nav>
+            <ul>
+                <li><a href="" >Ofertas</a></li>
+                <li><a href="" >Tiendas Oficiales</a></li>
+                <li><a href="" >Vender</a></li>
+                <li><a href="" >Ayuda</a></li>
+            </ul>
+            <ul class="loginBar">
+                <li><a href="./register" >Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="./login" >Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="" >Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+            <!--<nav>
+                <a href="" >Ofertas</a>
+                <a href="" >Tiendas Oficiales</a>
+                <a href="" >Vender</a>
+                <a href="" >Ayuda</a>
+            </nav>
+            <nav>
+                <li><a href="/register" >Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="" >Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="" >Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </nav>-->
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+       </header>
+    <main>
+        <picture><img class="banner" title="Banner" src="/images/img-home-banner.jpg" ></picture>
+        <h1>Basado en tu última visita</h1>
+        <section>
+        
+            <ul>
+                <li>
+                    <article>
+                    <picture><img src="/images/img-cafetera-moulinex.jpg" ></picture>
+                    
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$6.770</p>
+                        <p class="descuento">40% OFF</p>
+                        <p class="descripcion">Cafetera Moulinex</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-macbook-pro-2019.jpg"></picture> 
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$230.000</p>
+                        <p class="descuento">20% off</p>
+                        <p class="descripcion">MacBook Pro 2019</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-samsung-galaxy-s10.jpg"></picture>
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$70.500</p>
+                        <p class="descuento">10% off</p>
+                        <p class="descripcion">Samsung Galaxy S10</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-tv-samsung-smart.jpg"></picture> 
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$23.200</p>
+                        <p class="descuento">5% off</p>
+                        <p class="descripcion">SmartTv Samsung 43"</p>
+                    </article>
+                </li>
+            </ul>   
+        </section>
+            
+        <section >
+            <h1>Ofertas</h1>
+            <ul>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-cafetera-moulinex.jpg"></picture> 
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$6.770</p>
+                        <p class="descuento">40% off</p>
+                        <p class="descripcion">Cafetera Moulinex</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-macbook-pro-2019.jpg"></picture> 
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$230.000</p>
+                        <p class="descuento">20% off</p>
+                        <p class="descripcion">MacBook Pro 2019</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-samsung-galaxy-s10.jpg"></picture> 
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$70.500</p>
+                        <p class="descuento">10% off</p>
+                        <p class="descripcion">Samsung Galaxy S10</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture><img src="/images/img-tv-samsung-smart.jpg"></picture>
+                        <i class="fa-solid fa-truck"></i>
+                        <p class="precio">$23.200</p>
+                        <p class="descuento">5% off</p>
+                        <p class="descripcion">SmartTv Samsung 43"</p>
+                    </article>
+                </li>
+            </ul>         
+            
+         </section>
+
+    </main>
+    <footer>
+        <i class="fa-solid fa-credit-card"></i>
+        <h2>Pagá con tarjeta o en efectivo</h2>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+            <i class="fa-solid fa-gift"></i>
+            
+            <h2>Envío gratis desde $ 2.500</h2>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+            
+            <i class="fa-solid fa-user-shield"></i>
+            <h2>Seguridad, de principio a fin</h2>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+            
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        
+    </footer>
+
+</body>
+</html>

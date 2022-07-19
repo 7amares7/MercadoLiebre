@@ -1,0 +1,111 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+/*
+.navbar{
+
+}
+.loginbar{
+
+}
+.searchbar{
+
+}*/
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90vw;
+    background-color: #EAC926;
+    /*height: 20vh;*/
+}
+
+header nav{
+    display: none;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+header section{
+    display: flex;
+    position: relative;
+    width: 90vw
+}
+header div{
+    width: 90vw
+}
+header nav ul{
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.burger-menu{
+    display: flex;
+    background-color: #1259c3;
+    color: #ebebeb;
+    width: 2vh;
+    height: 2vh;
+    padding: 1rem;
+    margin: 1rem;
+    align-content: center;
+    align-self: center;
+    
+}
+
+header picture img{
+    width: 40vw;
+    margin: auto;
+    padding: 1rem;
+    /*width: 50vw;*/
+}
+.loginBar{
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+/*
+header form{
+    width: 40vw;
+    margin: auto;
+    padding: 1rem;
+    /*width: 50vw;
+}
+/*
+#search-form{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+     /*height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 40vw;
+    margin: 1rem;
+    background-color: white;
+    
+}
+
+#search-form input{
+    flex-grow: 1;
+    padding:  0 .25rem;
+    outline: none;
+}
+#search-form input:focus{
+    background-color: bisque;
+    color: black;
+} 
+#search-form button{
+    flex-basis: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/

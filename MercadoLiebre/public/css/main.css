@@ -1,0 +1,298 @@
+/*Los import es porque estamos modularizando los css, 
+vinculo sólo un css que ya importa el resto de los css
+Siempre debemos ponerlos al inicio 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+
+@import url('normalize.css');*/
+@import url('header.css');
+@import url('footer.css');
+@import url('reset.css');
+
+
+body{
+    /*min-height: 100vh;*/
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    width: 90vw;
+    margin: auto;
+
+
+}
+main{
+    width: 90vw;
+    margin: auto;
+    background-color: #ebebeb;
+}
+h1{
+    font-size: 24px;
+    color: #666; 
+    /*
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;*/
+}
+nav {
+    display: block;
+  }
+
+
+
+.article{
+    margin: 10px;
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: white;
+}
+main section li{
+    background-color: white;
+
+}
+main section article i{
+    display: block;
+    font-size: 1.1rem;
+    padding: .33rem;
+    /*width: 2rem;
+    height: 2rem;*/
+    border: solid 1px #39b54a;
+    background-color: #FFF;
+    border-radius:  50%;
+    position: absolute;
+    right: 4rem;
+    box-sizing: border-box;
+ 
+    color: #39b54a;
+}
+.fa-solid fa-truck{
+    display: block;
+    border-radius: 4rem;
+    border: solid 1px green;
+    padding: 15px;
+   
+}
+.fa-truck:hover::before{
+    animation: none;
+    transform: scale(1.25) rotate(0deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.fa-truck:hover::before{
+    animation: spin 1s linear infinite;
+    transform: scale(-.5) rotate(0deg);
+}/*
+@keyframes fa-truck {
+    0%{
+        transform: scale(1.5) rotate(0deg);
+    }
+    100%{
+        transform: scale(1.5) rotate(360deg);
+    }
+}*/
+
+.banner{
+    width: 90vw;
+    display: flex;
+    position: relative;
+    margin: auto;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+section article picture{
+    width: 90vw;
+}
+section article picture img{
+    /*max-width: 100%;*/
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 90vw;
+    border-bottom: solid 1px #ebebeb;
+    padding: 0;
+    margin: auto;
+}
+
+li{
+    list-style-type: none;
+    display: inline-grid;
+}
+/*PENDIENTE POR PORCENTAJES*/
+/*PENDIENTE POR PORCENTAJES*/
+/*PENDIENTE POR PORCENTAJES*/
+/*PENDIENTE POR PORCENTAJES*/
+.precio{
+    width: 20vw;
+    display: inline-flex;
+    font-size: 18px;
+}
+.descuento{
+    width: 50vw;
+    display: inline-flex;
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcion{
+    font-size: 16px;
+    display: none;
+}
+.precio, .descuento, .descripcion
+{
+    margin: 15px;
+}
+
+.registro {
+    padding: 20px 15px;
+    display: block;
+}
+.ingresar{
+    padding: 20px 15px;
+    display: block;
+}
+
+
+.registro p{
+    margin-bottom: 15px;
+
+}
+.ingresar p{
+    margin-bottom: 15px;
+
+}
+.registro label{
+    margin-bottom: 15px;
+}
+.label{
+    margin-bottom: 15px;
+   
+}
+.texto {
+    width: 90vw;
+    height: 50px;
+}
+/* 
+Cascade Style Sheet
+Hoja de estilo en cascada
+Es así porque importa el orden en el que pones los elementos
+
+Nivel 1 es etiiqueta
+h1
+body
+Nivel 2 selectores de herencia
+body h1
+Nivel 3 selectores de atributo
+#title
+*/
+
+/*Aplico la media query para los diferentes tipos de dispositivos
+Preguntar si es buena práctica implementar la orientación
+*/
+
+@media screen and (min-width: 360px){
+    main section li{
+        width: 35vw;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 5px;
+        
+    }
+    
+    main section article picture{
+        width: 35vw;
+        margin: 5px;
+        padding: 0;
+    }
+    main section article picture img{
+        width: 33vw;
+        margin: 5px;
+        padding: 0;
+    }
+    .precio{
+        font-size: 1rem;
+        width: 5vw;
+
+    }
+    .descuento{
+        font-size: .9rem;
+        width: 10vw;
+    }
+    .descripcion{
+        display: block;
+        font-size: .75rem;
+    }
+    .texto {
+        width: 350px;
+    }
+    .boton{
+        background-color: #1259c3;
+        width: 40vw;
+        border:none;
+        color: #ebebeb;
+        font-weight: bold;
+        height: 50px;
+    }
+    main section article .fa-truck{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        position: inherit;
+        justify-content: right;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    
+    header nav{
+        display: flex;
+    
+    }
+    main section li{
+        width: 18vw;
+    }
+    main section article picture{
+        width: 18vw;
+    }
+    main section article picture img{
+        width: 15vw;
+    }
+    .burger-menu{
+
+        display: none;
+    }
+    .precio{
+        font-size: .7rem;
+        width: .5vw;
+        align-self: flex-start;
+
+    }
+    .descuento{
+        font-size: .6rem;
+        width: 9vw;
+        align-self: flex-end;
+    }
+    
+}
+    
+/*
+@media screen and (min-width: 1024px){
+    992
+}
+@media(min-width: 460px){
+    1200
+
+}*/
