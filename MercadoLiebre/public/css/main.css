@@ -16,32 +16,141 @@ Verde: #39b54a;
 
 
 body{
-    /*min-height: 100vh;*/
-    display: block;
-    justify-content: center;
-    align-items: center;
+    background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background-color: #ebebeb;
+    
+}
+   
+/*min-height: 100vh;*//*
+    /*display: block;
+    justify-content: center;
+    align-items: center;
+    
     width: 90vw;
     margin: auto;
 
 
-}
+}*/
 main{
-    width: 90vw;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     background-color: #ebebeb;
+    
 }
-h1{
+main section{
+    margin-bottom: 10px;
+}
+main section article{
+    background-color: #fff;
+    margin-top: 10px;
+    width: 100%;
+}
+main section article img{
+    width: 100%;
+    /*border-bottom: 1px solid #ebebeb;*/
+}
+
+.camion{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    /* top: -10px; */
+    flex-wrap: nowrap;
+  
+
+}
+/*.fa-solid .fa-truck{
+    display: block;
+    border-radius: 4rem;
+    border: solid 1px green;
+    padding: 15px;
+    
+}*/
+main section article i{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    /*width: 2rem;
+    position: absolute;
+    height: 2rem;*/
+    border: solid 1px #39b54a;
+    background-color: #FFF;
+    border-radius:  50%;
+    right: 4rem;
+    box-sizing: border-box;
+    position: relative;
+    color: #39b54a;
+    right: 20px;
+    top: -20px;
+}
+/*
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    }*/
+.divArticle{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.precio{
+    font-size: 18px;
+    display: flex;
+    width: 20%;
+    /*display: inline-flex;*/
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    width: 50%;
+    display: flex;
+    /*display: inline-flex;
+    */
+}
+.descripcion{
+    font-size: 16px;
+    display: none;
+}
+.precio, .descuento, .descripcion
+{
+    margin: 15px;
+}
+
+
+
+
+main h1{
     font-size: 24px;
     color: #666; 
-    /*
+    padding: 5px;
     display: block;
+    /*
     margin: 1rem;
     padding: 1rem;
     text-align: center;*/
 }
+/*
 nav {
     display: block;
   }
@@ -60,28 +169,8 @@ main section li{
     background-color: white;
 
 }
-main section article i{
-    display: block;
-    font-size: 1.1rem;
-    padding: .33rem;
-    /*width: 2rem;
-    height: 2rem;*/
-    border: solid 1px #39b54a;
-    background-color: #FFF;
-    border-radius:  50%;
-    position: absolute;
-    right: 4rem;
-    box-sizing: border-box;
- 
-    color: #39b54a;
-}
-.fa-solid fa-truck{
-    display: block;
-    border-radius: 4rem;
-    border: solid 1px green;
-    padding: 15px;
-   
-}
+
+
 .fa-truck:hover::before{
     animation: none;
     transform: scale(1.25) rotate(0deg);
@@ -98,7 +187,7 @@ main section article i{
     100%{
         transform: scale(1.5) rotate(360deg);
     }
-}*/
+}*//*
 
 .banner{
     width: 90vw;
@@ -117,7 +206,7 @@ section article picture{
     width: 90vw;
 }
 section article picture img{
-    /*max-width: 100%;*/
+    /*max-width: 100%;*//*
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -134,26 +223,7 @@ li{
 /*PENDIENTE POR PORCENTAJES*/
 /*PENDIENTE POR PORCENTAJES*/
 /*PENDIENTE POR PORCENTAJES*/
-/*PENDIENTE POR PORCENTAJES*/
-.precio{
-    width: 20vw;
-    display: inline-flex;
-    font-size: 18px;
-}
-.descuento{
-    width: 50vw;
-    display: inline-flex;
-    font-size: 16px;
-    color: #39b54a;
-}
-.descripcion{
-    font-size: 16px;
-    display: none;
-}
-.precio, .descuento, .descripcion
-{
-    margin: 15px;
-}
+/*PENDIENTE POR PORCENTAJES*//*
 
 .registro {
     padding: 20px 15px;
@@ -202,24 +272,44 @@ Nivel 3 selectores de atributo
 Preguntar si es buena práctica implementar la orientación
 */
 
-@media screen and (min-width: 360px){
-    main section li{
-        width: 35vw;
+@media screen and (min-width: 361px){
+    .burger-menu{
+        display: none;        
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+    main section{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .producto{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    main section article{
+        width: 50%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        /*text-align: center;
+        margin: 5px;*/
         
     }
     
-    main section article picture{
+    main section article img{
         width: 35vw;
         margin: 5px;
         padding: 0;
     }
-    main section article picture img{
-        width: 33vw;
-        margin: 5px;
-        padding: 0;
-    }
+   
     .precio{
         font-size: 1rem;
         width: 5vw;
@@ -231,7 +321,7 @@ Preguntar si es buena práctica implementar la orientación
     }
     .descripcion{
         display: block;
-        font-size: .75rem;
+        font-size: 80%;
     }
     .texto {
         width: 350px;
@@ -244,13 +334,34 @@ Preguntar si es buena práctica implementar la orientación
         font-weight: bold;
         height: 50px;
     }
-    main section article .fa-truck{
-        display: inline-flex;
+    
+    .camion{
+        /*display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-end;
-        position: inherit;
-        justify-content: right;
+        position: absolute;
+        justify-content: right;*/
+        /*
+        display:  inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        align-items: flex-end;
+        justify-content: right;*/
+        display:  inline-flex;
+        position: absolute;
+    }
+
+        
+  
+    main section article i{
+        display: inline-flex;
+        right: 4rem;
+        box-sizing: border-box;
+        position: relative;
+        right: 20px;
+        top: -20px;
     }
 }
 
@@ -264,10 +375,8 @@ Preguntar si es buena práctica implementar la orientación
     main section li{
         width: 18vw;
     }
-    main section article picture{
-        width: 18vw;
-    }
-    main section article picture img{
+   
+    main section article img{
         width: 15vw;
     }
     .burger-menu{
