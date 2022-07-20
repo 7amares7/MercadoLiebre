@@ -358,7 +358,6 @@ Preguntar si es buena práctica implementar la orientación
         row-gap: 15px;
         column-gap: 15px;
     }
-    }
     .producto{
         display: flex;
         flex-wrap: wrap;
