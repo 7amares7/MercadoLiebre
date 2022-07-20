@@ -44,16 +44,20 @@ header nav{
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    font-size: 12px;
 }
 header ul {
     display: none;
+    justify-content: space-between;
+
 }
 header ul li{
     list-style-type: none;
+    justify-content: space-between;
+    margin: 5px;
 }
 header ul li a{
     color: black;
+    font-size: 16px;
 }
 header p{
     width: 90%;
@@ -126,6 +130,21 @@ header p{
     border-radius: 5px;
     
 }
+.loginBar{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    width: 50%;
+}
+.navBar{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    width: 50%;
+}
+
 .banner{
     width: 100%;
 }
@@ -156,13 +175,7 @@ header picture img{
     padding: 1rem;
     /*width: 50vw;*/
 /*}
-.loginBar{
-    display: inline-flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
+
 /*
 header form{
     width: 40vw;
