@@ -69,10 +69,31 @@ header p{
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
+    viejo dollar
+    .dollar{
+    text-align: center;
+    font-weight: 700;
+    box-sizing: content-box;
+    font-size: .75rem;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    width: 1rem;
+    white-space: nowrap;
+}
 }*/
-
+.divDollar{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+}
 .dollar{
     text-align: center;
+    font-weight: 700;
+    box-sizing: content-box;
 }
 .search{
     display: flex;

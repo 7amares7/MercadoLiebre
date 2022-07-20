@@ -14,7 +14,9 @@ Verde: #39b54a;
 @import url('footer.css');
 @import url('reset.css');
 
-
+html{
+    font-size: 12px;
+}
 body{
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
@@ -155,6 +157,66 @@ main h1{
     padding: 1rem;
     text-align: center;*/
 }
+
+.registro {
+    padding: 20px 15px;
+    display: block;
+}
+.ingresar{
+    padding: 20px 15px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.ingresar p{
+    height: 30%;
+    margin: 15px;
+    width: 100%;
+}
+
+.texto{
+    border: none;
+    padding: 2px;
+    flex-wrap: wrap;
+    color: #666;
+    width: 70%;
+    border-radius: 5px;
+    height: 50px;
+   
+}
+.comprador{
+    display: inline;
+    margin: 10px;
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.registro{
+    padding: 20px 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registro p{
+    height: 30%;
+    margin: 15px;
+    width: 100%;
+}
+
+.check{
+    margin:15px;
+}
 /*
 nav {
     display: block;
@@ -230,14 +292,6 @@ li{
 /*PENDIENTE POR PORCENTAJES*/
 /*PENDIENTE POR PORCENTAJES*//*
 
-.registro {
-    padding: 20px 15px;
-    display: block;
-}
-.ingresar{
-    padding: 20px 15px;
-    display: block;
-}
 
 
 .registro p{
@@ -290,11 +344,20 @@ Preguntar si es buena práctica implementar la orientación
 
     }
     main section{
-        display: flex;
+       /* display: flex;
         flex-direction: row;
         position: relative;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between;*/
+        display: grid;
+        flex-direction: row;
+        position: relative;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        grid-template-columns: auto auto;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
     }
     .producto{
         display: flex;
@@ -303,7 +366,7 @@ Preguntar si es buena práctica implementar la orientación
     }
     
     main section article{
-        width: 50%;
+        /*width: 50%;*/
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         display: flex;
         flex-wrap: wrap;
@@ -319,7 +382,7 @@ Preguntar si es buena práctica implementar la orientación
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
     }
     
     main section article img{
@@ -331,12 +394,13 @@ Preguntar si es buena práctica implementar la orientación
     .precio{
         width: 25%;
         font-size: 1rem;
-        
+        display: block;
 
     }
     .descuento{
         width: 75%;
         font-size: .75rem;
+        display: block;
     }
     .descripcion{
         display: flex;
@@ -349,6 +413,9 @@ Preguntar si es buena práctica implementar la orientación
     .precio, .descuento, .descripcion {
         margin: 0;
         box-sizing: border-box;
+    }
+    .prodDescripcion{
+        width: 100%;
     }
     .boton{
         background-color: #1259c3;
@@ -375,6 +442,7 @@ Preguntar si es buena práctica implementar la orientación
         justify-content: right;*/
         display:  inline-flex;
         position: absolute;
+        top: -2px;
     }
 
         
@@ -387,6 +455,14 @@ Preguntar si es buena práctica implementar la orientación
         right: 20px;
         top: -20px;
     }
+
+    .search{
+        align-items: center;
+    }
+    .search-form{
+        height: 50%;
+    }
+    
 }
 
 
@@ -401,7 +477,26 @@ Preguntar si es buena práctica implementar la orientación
     main section li{
         width: 25%;
     }*/
+    .start{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 
+    header img{
+        width: 30%;
+    }
+/*
+    .search{
+        width: 40%;
+    }
+    .search-form{
+        height: 40%;
+    }
+
+    .dollar{
+        width: 30%;
+
+    }
     main section article{
         width: 25%;
        
@@ -412,7 +507,11 @@ Preguntar si es buena práctica implementar la orientación
         width: 20vw;
     }
 
-    
+ 
+    .camion{
+        right: 1px;
+    }
+    */
  /*
     
     .precio{
