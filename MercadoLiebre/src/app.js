@@ -3,7 +3,7 @@ const {resolve} = require('path');
 const app = express();
 const port = process.env.PORT || 2020;
 app.listen(port);
-const public = resolve(__dirname, 'public');
+const public = resolve(__dirname, '../public');
 const static = express.static(public);
 app.use(static);
 
