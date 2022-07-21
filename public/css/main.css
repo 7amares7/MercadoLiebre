@@ -216,6 +216,12 @@ main h1{
 .check{
     margin:15px;
 }
+
+.fa-truck:hover{
+    animation: none;
+    transform: rotate(-90deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 /*
 .fa-truck:hover::before{
     animation: none;
@@ -420,6 +426,8 @@ Preguntar si es buena práctica implementar la orientación
         position: relative;
         width: 100%;
         font-size: .9rem;
+        margin: 0;
+       
     }
     .precio, .descuento, .descripcion {
         margin: 15px;
